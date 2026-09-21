@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-<title>テストですよ。伊藤翔の</title>
-<link rel="icon" href="https://shoito.jp/is logo.png">
-<meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-<!-- OGP / Social Preview -->
-<meta property="og:title" content="テストですよ。伊藤翔の">
-<meta property="og:description" content="テストですよ。伊藤翔の">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://test.shoito.jp/">
-<meta property="og:image" content="https://shoito.pages.dev/ogp.png">
+  <meta charset="UTF-8">
+  <title>JS TEST</title>
 
-<!-- X向け -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="テストですよ。伊藤翔の">
-<meta name="twitter:description" content="テストですよ。伊藤翔の">
-<meta name="twitter:image" content="https://shoito.pages.dev/ogp.png">
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    button {
+      font-size: 24px;
+      padding: 15px 30px;
+    }
+  </style>
 </head>
+
 <body>
-<center>
 
-<div class="stage">
-  <div class="word">伊藤翔の～テストぉ～</div>
-</div>
+  <button id="button">押してみて</button>
 
-</center>
+  <script>
+    const button = document.getElementById("button");
+
+    button.addEventListener("click", () => {
+      alert("伊藤翔のJSが動いた！");
+    });
+  </script>
+
 </body>
 </html>
