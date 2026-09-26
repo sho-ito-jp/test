@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Test</title>
+
+<style>
+#text {
+    position: relative;
+    left: 0;
+    transition: left 0.5s;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<p id="text">伊藤翔</p>
+
+<script>
+const text = document.getElementById("text");
+
+text.addEventListener("click", function() {
+    text.style.left = "100px";
+});
+</script>
+
+</body>
+</html>
