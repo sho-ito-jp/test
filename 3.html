@@ -1,0 +1,12 @@
+<p id="ito">伊藤翔</p>
+
+<script>
+const ito = document.getElementById("ito");
+
+let x = 0;
+
+ito.addEventListener("click", function() {
+    x += 100;
+    ito.style.transform = `translateX(${x}px)`;
+});
+</script>
