@@ -1,0 +1,27 @@
+<p id="ito">伊藤翔</p>
+
+<script>
+const ito = document.getElementById("ito");
+
+const texts = [
+    "伊藤翔",
+    "伊藤",
+    "翔",
+    "藤",
+    "伊",
+    "翔",
+    "伊藤翔"
+];
+
+let i = 0;
+
+ito.addEventListener("click", function() {
+    i++;
+
+    if (i >= texts.length) {
+        i = 0;
+    }
+
+    ito.textContent = texts[i];
+});
+</script>
