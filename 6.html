@@ -1,0 +1,23 @@
+<p id="message"></p>
+
+<script>
+const message = document.getElementById("message");
+
+let count = localStorage.getItem("visitCount");
+
+if (count === null) {
+    count = 0;
+}
+
+count++;
+
+localStorage.setItem("visitCount", count);
+
+if (count === 1) {
+    message.textContent = "はじめまして。";
+} else if (count === 2) {
+    message.textContent = "また来た。";
+} else {
+    message.textContent = "また来たね。";
+}
+</script>
