@@ -73,33 +73,45 @@
   </section>
 
 
-  <!-- CONTACT -->
-  <section class="modal" id="contact">
-    <button class="modal-close">CLOSE</button>
+<!-- CONTACT -->
+<section class="modal" id="contact">
+  <button class="modal-close">CLOSE</button>
 
-    <div class="modal-content contact-content">
-      <h2>CONTACT</h2>
+  <div class="modal-content contact-content">
+    <h2>CONTACT</h2>
 
-      <form>
-        <label>
-          NAME
-          <input type="text" name="name">
-        </label>
+    <form action="https://api.lazyforms.com/f/4270da2c-4a7d-42c2-b792-b78dbdeb811d" method="POST">
 
-        <label>
-          E-MAIL
-          <input type="email" name="email">
-        </label>
+      <label>
+        名前
+        <input type="text" name="name">
+      </label>
 
-        <label>
-          MESSAGE
-          <textarea name="message"></textarea>
-        </label>
+      <label>
+        メールアドレス
+        <input type="email" name="email">
+      </label>
 
-        <button type="submit">SEND</button>
-      </form>
-    </div>
-  </section>
+      <label>
+        種類
+        <select name="type">
+          <option value="">選択してください</option>
+          <option value="楽曲・作品について">楽曲・作品について</option>
+          <option value="出演・依頼について">出演・依頼について</option>
+          <option value="その他">その他</option>
+        </select>
+      </label>
+
+      <label>
+        本文
+        <textarea name="message"></textarea>
+      </label>
+
+      <button type="submit">送信</button>
+
+    </form>
+  </div>
+</section>
 
 
   <script src="script.js"></script>
