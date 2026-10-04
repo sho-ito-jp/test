@@ -2,33 +2,106 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
+  <title>伊藤翔</title>
 
-    button {
-      font-size: 24px;
-      padding: 15px 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <button id="button">押してみて</button>
+  <!-- HOME -->
+  <main id="home">
 
-  <script>
-    const button = document.getElementById("button");
+    <!-- 左上 -->
+    <nav class="nav-top-left">
+      <button data-modal="works">WORKS</button>
+      <button data-modal="stage">STAGE</button>
+    </nav>
 
-    button.addEventListener("click", () => {
-      alert("いらbjsdsbndlj！");
-    });
-  </script>
+    <!-- 中央：ホーム動画 -->
+    <div class="home-video">
+      <video autoplay muted loop playsinline>
+        <source src="home.mp4" type="video/mp4">
+      </video>
+    </div>
 
+    <!-- 左下 -->
+    <nav class="nav-bottom-left">
+      <button data-modal="contact">CONTACT</button>
+    </nav>
+
+  </main>
+
+
+  <!-- WORKS -->
+  <section class="modal" id="works">
+    <button class="modal-close">CLOSE</button>
+
+    <div class="modal-content works-content">
+
+      <div class="works-column">
+        <h2>DISCOGRAPHY</h2>
+        <div id="discography">
+          <!-- 後でCMSから入れる -->
+        </div>
+      </div>
+
+      <div class="works-column">
+        <h2>提供のWORKS</h2>
+        <div id="provided-works">
+          <!-- 後でCMSから入れる -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- STAGE -->
+  <section class="modal" id="stage">
+    <button class="modal-close">CLOSE</button>
+
+    <div class="modal-content">
+      <h2>STAGE</h2>
+
+      <div class="stage-list">
+        <!-- 後で出演情報などを追加 -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="modal" id="contact">
+    <button class="modal-close">CLOSE</button>
+
+    <div class="modal-content contact-content">
+      <h2>CONTACT</h2>
+
+      <form>
+        <label>
+          NAME
+          <input type="text" name="name">
+        </label>
+
+        <label>
+          E-MAIL
+          <input type="email" name="email">
+        </label>
+
+        <label>
+          MESSAGE
+          <textarea name="message"></textarea>
+        </label>
+
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
