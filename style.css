@@ -118,7 +118,7 @@ button {
 
   z-index: 100;
 
-  background: #fff;
+  background: rgba(241, 241, 241, 0.5);
 
   visibility: hidden;
   opacity: 0;
